@@ -3,6 +3,8 @@
 }
 
 body {
+    overscroll-behavior-y: contain;
+    overflow-x: hidden;
     background-color: #f3f3f3;
     background-image: linear-gradient(60deg, #a61657, #5a1c89, #3d115a, #a61657);
     /* #624381,#541974,#9a1adf */
@@ -21,6 +23,7 @@ body {
     border: 2px solid #ffffff5c;
     box-shadow: 1px 1px #7b5a7c;
     border-radius: 2rem;
+    user-select: none;
 }
 
 .nav-btns {
@@ -218,6 +221,7 @@ body {
     flex: row;
     justify-content: space-around;
     align-items: center;
+    user-select: none;
 }
 
 .nav-btns-2 p {
