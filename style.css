@@ -472,7 +472,8 @@ a:hover {
     }
 
     .heading {
-        font-size: 1.6rem;
+        margin-left: 1rem;
+        font-size: 1.7rem;
         font-weight: 900;
         color: #edd3f8;
     }
