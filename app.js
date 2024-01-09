@@ -5,16 +5,25 @@ contactMeBtn.addEventListener('click', ()=>{
 });
 
 let myProjectsBtn = document.getElementsByClassName('projects-btn');
-myProjectsBtn.addEventListener('click', ()=>{
+myProjectsBtn[0].addEventListener('click', ()=>{
+    window.location.href = "https://renishchandera.github.io/MyPortfolio/projects-work.html";
+});
+myProjectsBtn[1].addEventListener('click', ()=>{
     window.location.href = "https://renishchandera.github.io/MyPortfolio/projects-work.html";
 });
 
 let myEducationBtn = document.getElementsByClassName('education-btn');
-myEducationBtn.addEventListener('click', ()=>{
+myEducationBtn[0].addEventListener('click', ()=>{
+    window.location.href = "https://renishchandera.github.io/MyPortfolio/education-certificates.html";
+});
+myEducationBtn[1].addEventListener('click', ()=>{
     window.location.href = "https://renishchandera.github.io/MyPortfolio/education-certificates.html";
 });
 
 let homeBtn = document.getElementsByClassName('home-btn');
-homeBtn.addEventListener('click', ()=>{
+homeBtn[0].addEventListener('click', ()=>{
+    window.location.href = "https://renishchandera.github.io/MyPortfolio/";
+});
+homeBtn[1].addEventListener('click', ()=>{
     window.location.href = "https://renishchandera.github.io/MyPortfolio/";
 });
