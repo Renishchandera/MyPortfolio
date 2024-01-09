@@ -1,0 +1,184 @@
+ .my-projects-heading h1{
+    font-size: 2.5rem;
+    margin: 2rem;
+    text-align: center;
+    text-decoration:underline #a058ca ;
+}
+ .my-work-heading h1{
+    font-size: 2.5rem;
+    margin: 2rem;
+    text-align: center;
+    text-decoration:#a058ca underline ;
+}
+
+
+
+.project{
+    
+    background: linear-gradient(70deg,#6301ad,#532672,#a058ca,#573268);
+   background-size: 700%;
+   border: 2px solid #ffffff4d;
+   box-shadow: 0px 0px 1.2rem #202020b3;
+   border-radius: 2rem;
+   animation: introBoxBackground 10s ease infinite;
+   display: flex;
+   flex-direction: column;
+   height: 70%;
+   width: 25%;
+   padding: 1rem;
+   margin: 2rem;
+}
+
+
+img{
+    height: 15rem;
+    width: 20rem;
+}
+
+.work{
+    
+        background: linear-gradient(70deg,#6301ad,#532672,#a058ca,#573268);
+       background-size: 700%;
+       border: 2px solid #ffffff4d;
+       box-shadow: 0px 0px 1.2rem #202020b3;
+       border-radius: 2rem;
+       animation: introBoxBackground 10s ease infinite;
+       display: flex;
+       flex-direction: column;
+       height: 70%;
+       width: 25%;
+       padding: 1rem;
+       margin: 2rem;
+   }
+
+
+.container-1{
+    display: flex;
+    flex-direction: unset;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.container-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+/* .img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.description-box{
+        font-size: 1.5rem;
+        color: #d3d3d3;
+        margin-top: 1rem;
+}
+
+/* making responsive for mobiles */
+
+/* for size smaller than 950px */
+
+@media  screen and (max-width:950px){
+
+    /* Making projects section responsive for mobile devices */
+    .my-projects-heading h1{
+        font-size: 1.8rem;
+        margin: 1.5rem;
+        text-align: center;
+        text-decoration:underline #a058ca ;
+    }
+     .my-work-heading h1{
+        font-size: 1.8rem;
+        margin: 1.5rem;
+        text-align: center;
+        text-decoration:#a058ca underline ;
+    }
+
+    .container-1{
+        padding: 0.1rem;
+    }
+    .project{
+       height: 30%;
+       width: 86%;
+       padding: 0.5rem;
+       margin: 0.5rem;
+       padding: 0.7rem;
+    }
+    img{
+        height: 10rem;
+        width: 100%;
+    }
+        /* making work section responsive */
+        .work{
+            height: 30%;
+            width: 86%;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            padding: 0.7rem;
+       }
+       .container-2{
+        padding: 0.1rem;
+    }
+    .description-box{
+        font-size: 1rem;
+        color: #d3d3d3;
+        margin-top: 1rem;
+        line-height: 1.4rem;
+    }
+
+} 
+
+/* for width smaller than 300px */
+
+
+@media  screen and (max-width:300px){
+
+    /* Making projects section responsive for mobile devices */
+    .my-projects-heading h1{
+        font-size: 1.6rem;
+        margin: 1.3rem;
+        text-align: center;
+        text-decoration:underline #a058ca ;
+    }
+     .my-work-heading h1{
+        font-size: 1.6rem;
+        margin: 1.3rem;
+        text-align: center;
+        text-decoration:#a058ca underline ;
+    }
+
+    .container-1{
+        padding: 0.1rem;
+    }
+    .project{
+       height: 30%;
+       width: 86%;
+       padding: 0.5rem;
+       margin: 0.4rem 0.4rem 1rem 0.4rem;
+       padding: 0.7rem;
+    }
+    img{
+        height: 10rem;
+        width: 100%;
+    }
+        /* making work section responsive */
+        .work{
+            height: 30%;
+            width: 86%;
+            padding: 0.5rem;
+            margin: 0.4rem 0.4rem 1rem 0.4rem;
+            padding: 0.7rem;
+       }
+       .container-2{
+        padding: 0.1rem;
+    }
+    .description-box{
+        font-size: 1rem;
+        color: #d3d3d3;
+        margin-top: 1rem;
+        line-height: 1.1rem;
+    }
+
+} 
