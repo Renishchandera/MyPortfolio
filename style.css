@@ -406,7 +406,7 @@ a:hover {
     }
 
     .welcome-text {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         color: #d3d3d3;
     }
 
@@ -453,7 +453,7 @@ a:hover {
     }
 
     .nav-btns-2 p {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         font-weight: 900;
         line-height: 0.8rem;
     }
@@ -472,7 +472,7 @@ a:hover {
     }
 
     .heading {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-weight: 900;
         color: #edd3f8;
     }
@@ -490,7 +490,7 @@ a:hover {
     }
 
     .thank-you {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .whatsapp {
@@ -507,7 +507,7 @@ a:hover {
 
 @media screen and (max-width:600px){
     .head {
-        margin: 0.3rem 0.1rem;
+        margin: 0.3rem 0.7rem;
     }
     
 .navigation-1 {
