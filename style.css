@@ -9,7 +9,7 @@ body {
     background-image: linear-gradient(60deg, #a61657, #5a1c89, #3d115a, #a61657);
     /* #624381,#541974,#9a1adf */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
 }
 .navigation-1 {
