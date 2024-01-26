@@ -493,7 +493,7 @@ a:hover {
     }
 
     .thank-you {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .whatsapp {
@@ -525,11 +525,18 @@ a:hover {
 .nav-btns p {
     font-size:  12px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: 800;
 }
 .nav-btns:hover {
     transform: scale(1);
     border: none;
     border-radius: 2rem;
+}
+}
+@media  screen and (max-width: 330px) {
+    .nav-btns p {
+    font-size:  10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
 }
 }
