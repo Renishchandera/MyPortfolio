@@ -37,12 +37,10 @@ img{
 
 .work{
     
-        background: linear-gradient(70deg,#6301ad,#532672,#a058ca,#573268);
-       background-size: 700%;
+    background: rgba(red, green, blue, 0);
        border: 2px solid #ffffff4d;
        box-shadow: 0px 0px 1.2rem #202020b3;
        border-radius: 2rem;
-       animation: introBoxBackground 10s ease infinite;
        display: flex;
        flex-direction: column;
        height: 70%;
