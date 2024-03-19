@@ -23,6 +23,7 @@
    margin: 0.5rem;
 }
  .img-box img{
+    object-fit: contain;
     max-height: 98%;
     max-width: 98%;
 }
@@ -58,6 +59,9 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+.check-out{
+    color: red;
 }
 .description-box{
         width: 70%;
