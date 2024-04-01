@@ -1,4 +1,7 @@
-let contactMeBtn = document.getElementById('contact-btn');
+document.addEventListener('DOMContentLoaded', ()=>{
+
+
+    let contactMeBtn = document.getElementById('contact-btn');
 let contactMeSection = document.getElementById('contact-section');
 contactMeBtn.addEventListener('click', ()=>{
     contactMeSection.scrollIntoView({behavior: 'smooth'});
@@ -33,3 +36,31 @@ if(homeBtn.length > 0){
         window.location.href = "https://renishchandera.github.io/MyPortfolio/index.html";
     });
 }
+
+// more nav button showing logic
+
+
+let moreMenu = document.querySelector('.hidden-nav-menu');
+let moreButton = document.getElementById('more-btn');
+let body = document.querySelector('body');
+
+    moreButton.addEventListener('click', ()=>{
+            moreMenu.classList.add('show-hidden-nav-menu');
+    });
+    
+    body.addEventListener('click', (event)=> {
+        const isClickedOutside = moreMenu.contains(event.target);
+        const isClickedOnButton = moreButton.contains(event.target);
+          if(!isClickedOutside && !isClickedOnButton)
+          {
+            moreMenu.classList.remove('show-hidden-nav-menu');
+          }
+    });
+
+
+});
+
+// Logic for active nav button
+
+
+

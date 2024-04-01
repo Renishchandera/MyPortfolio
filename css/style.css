@@ -34,7 +34,6 @@ body {
     align-items: center;
     border: 2px solid transparent;
     border-radius: 2rem;
-    transition: all 0.1s ease;
     padding: 0 0.3rem;
 }
 
@@ -43,22 +42,37 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
-
-/* nav buttons hover effect */
-.nav-btns:hover {
-    background: linear-gradient(-60deg, #a61657, #5a1c89, #3d115a, #a61657);
+.nav-btns:hover, .active-btn{
     color: rgb(255, 255, 255);
-    transform: scale(1.1);
-    border: 2px solid rgba(224, 253, 253, 0.5);
-    border-radius: 2rem;
+    outline: 1px solid rgba(224, 253, 253, 0.5);
+    background: linear-gradient(-60deg, #a61657, #5a1c89, #3d115a, #a61657);
 }
-
 .nav-btns:active {
     transform: scale(0.97);
 }
-
 .head {
     margin: 0.3rem 7rem;
+}
+.hidden-nav-menu{
+    display: none;
+}
+.show-hidden-nav-menu .more-nav-btns
+{   width: 90%;
+    margin: 4px;
+}
+.show-hidden-nav-menu{
+    display: flex;
+    background: linear-gradient(-60deg, #a61657, #5a1c89, #3d115a, #a61657);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 12rem;
+    width: 20rem;
+    outline: 1px solid rgba(224, 253, 253, 0.5);
+    position: absolute;
+    border-radius: 2rem;
+    top: 4rem;
+    right: 3rem;
 }
 
 /* My introduction styling */
@@ -339,7 +353,16 @@ a:hover {
     .head {
         margin: 0.3rem 0.5rem;
     }
-
+    .show-hidden-nav-menu
+    {
+        width: 40%;
+        height: 10rem;
+        top: 3rem;
+        right: 0.3rem;
+        padding: 0.1rem;
+        border-radius: 1rem;
+    }
+    
     .container-1 {
         flex-direction: column;
         justify-content: center;
@@ -526,11 +549,6 @@ a:hover {
     font-size:  12px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-}
-.nav-btns:hover {
-    transform: scale(1);
-    border: none;
-    border-radius: 2rem;
 }
 }
 @media  screen and (max-width: 330px) {
