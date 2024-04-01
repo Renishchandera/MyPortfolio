@@ -60,7 +60,6 @@ let body = document.querySelector('body');
 
 });
 
-// Logic for active nav button
 
 
 
