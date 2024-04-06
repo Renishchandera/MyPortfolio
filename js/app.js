@@ -1,39 +1,79 @@
 document.addEventListener('DOMContentLoaded', ()=>{
 
 
-    let contactMeBtn = document.getElementById('contact-btn');
+let contactMeBtn = document.getElementById('contact-btn');
 let contactMeSection = document.getElementById('contact-section');
+let homeBtn = document.getElementsByClassName('home-btn');
+let myEducationBtn = document.getElementsByClassName('education-btn');
+let myProjectsBtn = document.getElementsByClassName('projects-btn');
+let sloganBtn = document.getElementById('slogan-btn');
+let hobbiesBtn = document.getElementById('hobbies-btn');
+let startupBtn = document.getElementById('startup-btn');
+let feedbackBtn = document.getElementById('feedback-btn');
+
 contactMeBtn.addEventListener('click', ()=>{
     contactMeSection.scrollIntoView({behavior: 'smooth'});
 });
 
-let myProjectsBtn = document.getElementsByClassName('projects-btn');
+
 if(myProjectsBtn.length > 0){
     myProjectsBtn[0].addEventListener('click', ()=>{
-        window.location.href = "https://renishchandera.github.io/MyPortfolio/projects-work.html";
+        window.location.href = "projects-work.html";
     });
-    myProjectsBtn[1].addEventListener('click', ()=>{
-        window.location.href = "https://renishchandera.github.io/MyPortfolio/projects-work.html";
-    });
+    if(myProjectsBtn[1])
+    {
+        myProjectsBtn[1].addEventListener('click', ()=>{
+            window.location.href = "projects-work.html";
+        });
+    }
 }
 
-let myEducationBtn = document.getElementsByClassName('education-btn');
 if(myEducationBtn.length > 0){
     myEducationBtn[0].addEventListener('click', ()=>{
-        window.location.href = "https://renishchandera.github.io/MyPortfolio/education-certificates.html";
+        window.location.href = "education-certificates.html";
     });
-    myEducationBtn[1].addEventListener('click', ()=>{
-        window.location.href = "https://renishchandera.github.io/MyPortfolio/education-certificates.html";
+   if(myEducationBtn[1])
+   {
+     myEducationBtn[1].addEventListener('click', ()=>{
+        window.location.href = "education-certificates.html";
+        });
+   }
+}
+if(homeBtn.length > 0){
+    homeBtn[0].addEventListener('click', ()=>{
+        window.location.href = "index.html";
+    });
+    if(homeBtn[1])
+    {
+        homeBtn[1].addEventListener('click', ()=>{
+            window.location.href = "index.html";
+        });
+    }
+}
+if(hobbiesBtn){
+    hobbiesBtn.addEventListener('click', ()=>{
+        window.location.href = "hobbies.html";
     });
 }
 
-let homeBtn = document.getElementsByClassName('home-btn');
-if(homeBtn.length > 0){
-    homeBtn[0].addEventListener('click', ()=>{
-        window.location.href = "https://renishchandera.github.io/MyPortfolio/index.html";
+if(sloganBtn)
+{
+    sloganBtn.addEventListener('click', ()=>{
+        window.location.href = 'slogan.html';
     });
-    homeBtn[1].addEventListener('click', ()=>{
-        window.location.href = "https://renishchandera.github.io/MyPortfolio/index.html";
+}
+
+if(startupBtn)
+{
+    startupBtn.addEventListener('click', ()=>{
+        window.location.href = 'startup.html';
+    });
+}
+
+if(feedbackBtn)
+{
+    feedbackBtn.addEventListener('click', ()=>{
+        window.location.href = 'feedback.html';
     });
 }
 
@@ -47,10 +87,6 @@ let body = document.querySelector('body');
     moreButton.addEventListener('click', ()=>{
             moreMenu.classList.add('show-hidden-nav-menu');
             body.classList.add('blur');
-            // let blur = document.createElement('div');
-            // blur.classList.add('blur');
-            // body.prepend(blur);
-            console.log("appended SucessFully !");
     });
     
     body.addEventListener('click', (event)=> {
@@ -60,7 +96,6 @@ let body = document.querySelector('body');
           {
             moreMenu.classList.remove('show-hidden-nav-menu');
             body.classList.remove('blur');
-            console.log("Removed!");
           }
     });
 

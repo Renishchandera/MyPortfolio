@@ -18,7 +18,6 @@ body {
 }   
 .navigation-1 {
     background: rgba(red, green, blue, 0);
-    /* #9a1adf,#541974,#624381  */
     display: flex;
     justify-content: space-around;
     align-items: center;
