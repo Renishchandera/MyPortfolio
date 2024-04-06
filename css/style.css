@@ -5,13 +5,17 @@
 body {
     overscroll-behavior-y: contain;
     overflow-x: hidden;
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
     background-image: linear-gradient(60deg, #a61657, #5a1c89, #3d115a, #a61657);
     /* #624381,#541974,#9a1adf */
     background-repeat: no-repeat;
+    background-blend-mode: darken;
     /* background-attachment: fixed; */
     background-size: cover;
 }
+.blur{
+    background-image: linear-gradient(60deg, #a61657, #5a1c89, #3d115a, #a61657), linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+}   
 .navigation-1 {
     background: rgba(red, green, blue, 0);
     /* #9a1adf,#541974,#624381  */
@@ -23,6 +27,7 @@ body {
     border: 2px solid #ffffff5c;
     border-radius: 2rem;
     user-select: none;
+    z-index: 3;
 }
 
 .nav-btns {
@@ -66,6 +71,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    z-index: 3;
     height: 12rem;
     width: 20rem;
     outline: 1px solid rgba(224, 253, 253, 0.5);

@@ -46,6 +46,11 @@ let body = document.querySelector('body');
 
     moreButton.addEventListener('click', ()=>{
             moreMenu.classList.add('show-hidden-nav-menu');
+            body.classList.add('blur');
+            // let blur = document.createElement('div');
+            // blur.classList.add('blur');
+            // body.prepend(blur);
+            console.log("appended SucessFully !");
     });
     
     body.addEventListener('click', (event)=> {
@@ -54,6 +59,8 @@ let body = document.querySelector('body');
           if(!isClickedOutside && !isClickedOnButton)
           {
             moreMenu.classList.remove('show-hidden-nav-menu');
+            body.classList.remove('blur');
+            console.log("Removed!");
           }
     });
 
