@@ -1,0 +1,68 @@
+
+ main .heading{
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    text-shadow: 2px 1px 1px rgb(221, 196, 245) ;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hobby{
+    width: 90%;
+    height: 40%;
+    background: rgba(red, green, blue, 0);
+    border: 2px solid #ffffff5c;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 1.2rem #202020;
+    border-radius: 20px;
+    margin: 2rem;
+    padding: 1rem;
+}
+.hobby > p, h4{
+    font-size: x-large;
+    color: rgb(242, 255, 195);
+}
+h4{
+    font-size: large;
+}
+.img-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-container > img {
+    aspect-ratio: 3/3;
+    object-fit: contain;
+    border-radius: 1px solid grey;
+    transition: .3s all ease-in;
+}
+.img-container > img:hover
+{
+    transform: scale(1.2);
+}
+.audio-container{
+    height: max-content;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.song{
+    background-color: lightgreen;
+    display: flex;
+    border: 1px solid lightslategrey;
+    border-radius: 30px;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
