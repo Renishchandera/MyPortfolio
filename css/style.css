@@ -258,7 +258,7 @@ body {
     border-radius: 2rem;
     transition: all 0s ease;
     margin: 1rem;
-    box-shadow: 0 0 10px rgb(122, 71, 169)
+    box-shadow: 0 0 10px rgb(122, 71, 169);
 }
 
 .nav-btns-2:active {

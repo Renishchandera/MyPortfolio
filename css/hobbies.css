@@ -12,7 +12,7 @@
     align-items: center;
 }
 .hobby{
-    width: 90%;
+    max-width: 90%;
     height: 40%;
     background: rgba(red, green, blue, 0);
     border: 2px solid #ffffff5c;
@@ -35,11 +35,11 @@ h4{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 }
 
 .img-container > img {
     aspect-ratio: 3/3;
+    width: 40%;
     object-fit: contain;
     border-radius: 1px solid grey;
     transition: .3s all ease-in;
@@ -49,20 +49,40 @@ h4{
     transform: scale(1.2);
 }
 .audio-container{
-    height: max-content;
-    width: 100%;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 }
-.song{
-    background-color: lightgreen;
-    display: flex;
-    border: 1px solid lightslategrey;
+.audio-link{
+    border: 1px solid rgb(144, 199, 255);
     border-radius: 30px;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 65%;
+    text-decoration: underline;
+    transition: .1s all ease-in;
+}
+.audio-link:hover{
+   background-color: rgb(122, 71, 169);
+}
+
+
+@media screen and (max-width: 500px)
+{   
+    main .heading
+    {
+        font-size: 1.5rem;
+    }
+    .hobby >p, h4{
+        font-size: 1rem;
+    }
+    .hobby{
+        font-size: small;
+        margin: 2rem 0.5rem;
+    }
+    .audio-link
+    {   font-size: 1rem;
+        width: 95%;
+    }
 }
