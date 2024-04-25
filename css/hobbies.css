@@ -1,5 +1,5 @@
 
- main .heading{
+ main .hobby .heading{
     text-align: center;
     color: white;
     text-shadow: 1px 1px 1px rgb(221, 196, 245) ;
@@ -23,7 +23,7 @@
 }
 .hobby > p, h4{
     font-size: x-large;
-    color: rgb(242, 255, 195);
+    color: rgb(249, 255, 226);
 }
 h4{
     font-size: large;
@@ -69,9 +69,9 @@ h4{
 
 @media screen and (max-width: 500px)
 {   
-    main .heading
+    main .hobby .heading
     {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
     .hobby >p, h4{
         font-size: 1rem;
