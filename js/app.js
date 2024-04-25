@@ -10,6 +10,7 @@ let sloganBtn = document.getElementById('slogan-btn');
 let hobbiesBtn = document.getElementById('hobbies-btn');
 let startupBtn = document.getElementById('startup-btn');
 let feedbackBtn = document.getElementById('feedback-btn');
+let scrollUpBtn = document.getElementById('scroll-up');
 
 contactMeBtn.addEventListener('click', ()=>{
     contactMeSection.scrollIntoView({behavior: 'smooth'});
@@ -98,6 +99,19 @@ let body = document.querySelector('body');
             body.classList.remove('blur');
           }
     });
+
+    document.addEventListener('scroll', ()=>{
+       if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500)
+       {
+        scrollUpBtn.style.display = "block";
+       }else{
+        scrollUpBtn.style.display = "none";
+       } 
+    });
+
+    scrollUpBtn.addEventListener('click',()=>{
+        contactMeBtn.scrollIntoView({behavior: 'smooth'});
+    })
 
 });
 
