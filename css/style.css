@@ -359,12 +359,16 @@ a:hover {
         margin: 0.3rem 0.5rem;
     }
     #scroll-up{
+        display: inline-flexbox;
         background: linear-gradient(-60deg, #a61657, #5a1c89, #3d115a, #a61657);
         border: 1px solid #ffffff4d;
         border-radius: 50%;
         height: 40px;
+        font-weight: 400;
         width: 40px;
-        font-size: 1rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+        text-align: center;
         color: #fdf7ff;
         position: fixed;
         right: 20px;
