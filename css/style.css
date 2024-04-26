@@ -359,7 +359,6 @@ a:hover {
         margin: 0.3rem 0.5rem;
     }
     #scroll-up{
-        display: inline-flexbox;
         background: linear-gradient(-60deg, #a61657, #5a1c89, #3d115a, #a61657);
         border: 1px solid #ffffff4d;
         border-radius: 50%;

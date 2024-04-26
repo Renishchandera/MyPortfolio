@@ -1,0 +1,51 @@
+#form{
+    min-height: max-content;
+    width: 60%;
+}
+.container-1{
+   flex-direction: column;
+}
+
+input[type="text"],input[type="email"],textarea
+{
+    width: 70%;
+    min-height: max-content;
+    line-height: 1.5rem;
+    font-size: large;
+    border-radius: 1rem;
+    background: transparent;
+    border: 2px solid grey;
+    color: white;
+    padding: 10px 1rem;
+    transition: .2s all ease-in-out;
+}
+input[type="text"]:focus,input[type="email"]:focus, textarea:focus
+{
+ transform: scale(1.09);
+ border: none;
+ background: linear-gradient(-60deg, #a61657, #5a1c89, #3d115a, #a61657);
+}
+.submit
+{
+    width: 20%;
+    height: 4rem;
+    font-size: 1rem;
+    color: white;
+    transition: .3s all ease-in-out;
+}
+.submit:hover
+{
+    background: linear-gradient(-60deg, #a61657, #5a1c89, #3d115a, #a61657);
+    border: #a61657;
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 800px)
+{
+    .submit{
+        width: 30%;
+        
+    } 
+     
+
+}
