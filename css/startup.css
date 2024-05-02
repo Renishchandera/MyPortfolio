@@ -1,0 +1,53 @@
+.container-1{
+    flex-direction: column;
+}
+.startup
+{
+    max-width: 90%;
+    height: 40%;
+    background: rgba(red, green, blue, 0);
+    border: 2px solid #ffffff5c;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 1.2rem #202020;
+    border-radius: 20px;
+    color: whitesmoke;
+    margin: 2rem;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+.startuppage-heading
+{   margin-top: 1rem;
+    text-align: center;
+}
+.startup-heading{
+    margin-left: 0;
+    font-size: xx-large;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.startup h3{
+    font-size: x-large;
+    color: rgb(255, 199, 126);
+}
+
+.startup p{
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width:800px){
+    .startup
+    {
+        max-width: 95%;
+        margin: 1rem;
+        padding: 0.8rem;
+    }
+    .startup h2{
+        font-size: x-large;
+    }
+    .startup p{
+        font-size: large;
+        color: rgb(255, 255, 255);
+    }
+}
