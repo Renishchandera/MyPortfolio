@@ -33,21 +33,22 @@ input[type="text"]:focus,input[type="email"]:focus, textarea:focus
 }
 .submit
 {
-    width: 20%;
-    height: 4rem;
-    font-size: 1rem;
+    width: 30%;
+    font-size: 1.3rem;
+    padding: 7px;
     color: white;
     transition: .3s all ease-in-out;
 }
-.submit:hover
-{
-
+.submit:hover{
+    color: rgb(255, 174, 255);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 800px)
 {
     .submit{
-        width: 50%;   
+        width: 60%;  
+        font-size: 1rem
     } 
     
     #form,input[type="text"],input[type="email"],textarea{
