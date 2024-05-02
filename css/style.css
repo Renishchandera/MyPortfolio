@@ -89,7 +89,7 @@ body {
     padding: 1.5rem;
 }
 
-.my-intro {
+.my-intro{
     background: rgba(red, green, blue, 0);
     /* #6301ad,#532672,#a058ca,#573268 */
     background-size: 100%;
@@ -197,10 +197,11 @@ body {
     padding: 1.5rem;
 }
 
-.skills-box {
+.skills-box{
     background: rgba(red, green, blue, 0);
     background-size: 100%;
     border: 2px solid #ffffff4d;
+    background-size: 600%;
     box-shadow: 0px 0px 1.2rem #202020b3;
     border-radius: 2rem;
     /* animation: introBoxBackground 10s ease infinite; */
@@ -384,7 +385,7 @@ a:hover {
         border-radius: 1rem;
     }
     
-    .container-1 {
+    .container-1{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -395,7 +396,7 @@ a:hover {
         padding: 0.5rem;
     }
 
-    .container-1 .my-intro {
+    .container-1 .my-intro{
         width: 90%;
         max-height: 20rem;
         flex-direction: column;

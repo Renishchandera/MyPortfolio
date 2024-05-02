@@ -60,9 +60,6 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.check-out{
-    color: red;
-}
 .description-box{
         width: 70%;
         text-align: left;

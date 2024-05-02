@@ -63,6 +63,7 @@
     max-height: max-content;
     max-width: max-content;
     padding: 5px;
+    cursor: pointer;
     margin: 0.2rem;
 }
 .container-1{

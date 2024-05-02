@@ -1,11 +1,15 @@
 #form{
     min-height: max-content;
+    margin-top: 2rem;
     width: 60%;
 }
 .container-1{
    flex-direction: column;
 }
-
+.feedback-heading
+{
+    text-align: center;
+}
 input[type="text"],input[type="email"],textarea
 {
     width: 70%;
@@ -37,7 +41,7 @@ input[type="text"]:focus,input[type="email"]:focus, textarea:focus
 }
 .submit:hover
 {
-  
+
 }
 
 @media screen and (max-width: 800px)
