@@ -17,12 +17,14 @@ input[type="text"],input[type="email"],textarea
     border: 2px solid grey;
     color: white;
     padding: 10px 1rem;
+    margin: 1rem;
     transition: .2s all ease-in-out;
 }
 input[type="text"]:focus,input[type="email"]:focus, textarea:focus
 {
- transform: scale(1.09);
+ transform: scale(1.01);
  border: none;
+ margin: 1rem;
  background: linear-gradient(-60deg, #a61657, #5a1c89, #3d115a, #a61657);
 }
 .submit
@@ -35,17 +37,18 @@ input[type="text"]:focus,input[type="email"]:focus, textarea:focus
 }
 .submit:hover
 {
-    background: linear-gradient(-60deg, #a61657, #5a1c89, #3d115a, #a61657);
-    border: #a61657;
-    transform: scale(1.03);
+  
 }
 
 @media screen and (max-width: 800px)
 {
     .submit{
-        width: 30%;
-        
+        width: 50%;   
     } 
-     
+    
+    #form,input[type="text"],input[type="email"],textarea{
+        font-size: small;
+        width: 80%;
+    }
 
 }
