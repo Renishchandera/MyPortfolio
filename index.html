@@ -10,7 +10,8 @@
     <header>
        <div class="head">
          <div class="navigation-1">
-                <div class="nav-btns active-btn"><p>Home</p></div>
+                <div class="nav-btns active-btn"><p>Home</p>
+               </div>
                 <div class="nav-btns projects-btn"><p>Projects/<br>Work</p></div>
                 <div class="nav-btns education-btn"><p>Education/<br>Certificates</p></div>
                 <div class="nav-btns" id="contact-btn"><p>&nbsp;Contact &nbsp;Me</p></div>
@@ -187,39 +188,22 @@
                     backgroundColor: [0, '#'+ bar.getAttribute('data-barcolor')],
                     easing: 'easeInQuad',
                     duration: 500,
-                    round: 10,
+                    round: 1,
                 });
           
                bar.style.fontWeight = "600";
                bar.style.backgroundColor =  '#' + bar.getAttribute('data-barcolor');
             });
-            // const myIntro = document.getElementById('my-intro');
-            // myIntro.addEventListener('pointerover', (e)=>{
-            //    console.log("event Fired");
-            //    anime(
-            //    {
-            //       targets: '.my-intro',
-            //       width: '90vw',
-            //       height: '90vh',
-            //       easing: 'easeInOutQuad',
-            //       duration: 1000,
+            
+            const myName = document.querySelector('.my-name');
 
-            //    }
-            // )
-            // })
-            // myIntro.addEventListener('pointerout', (e)=>{
-            //    console.log("event Fired");
-            //    anime(
-            //    {
-            //       targets: '.my-intro',
-            //       wid,
-            //       height: '90vh',
-            //       easing: 'easeInOutQuad',
-            //       duration: 1000,
-
-            //    }
-            // )
-            // })
+            anime({
+               targets: [myName, '.my-name ~ h2'],
+               opacity: [0, 1],
+               translateY: [100, 0],
+               easing: 'spring()',
+               duration: 2000,
+            });
            
         });
     </script>
