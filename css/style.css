@@ -246,6 +246,18 @@ body {
     font-weight: 600;
 }
 
+ .progress-bar {
+    background-color: #3c3c7a;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+.progress {
+    height: 20px;
+    background-color: #ff6b6b;
+    width: 100%;
+    border-radius: 20px;
+}
+
 .navigation-2 {
     margin: 1.5rem 7rem;
     display: flex;
@@ -495,7 +507,6 @@ a:hover {
         font-weight: 600;
         margin-top: 0.2rem;
     }
-
     .navigation-2 {
         margin: 1rem 0;
         display: flex;
