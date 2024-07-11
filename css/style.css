@@ -353,9 +353,9 @@ a:hover {
 
 @media screen and (max-width:380px) {
 
-    .skill{
+    /* .skill{
         margin: 0.5rem;
-    }
+    } */
     /* for footer */
     .container-3 {
         padding: 0.5rem;

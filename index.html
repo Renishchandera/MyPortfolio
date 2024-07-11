@@ -183,7 +183,7 @@
                 anime({
                     targets: bar,
                     width: value + '%',
-                    easing: 'easeInOutQuad',
+                    easing: 'easeInElastic(1, 0.5)',
                     duration: 1000,
                 });
                bar.innerText = value + '%';
