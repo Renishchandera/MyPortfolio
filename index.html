@@ -183,10 +183,13 @@
                 anime({
                     targets: bar,
                     width: value + '%',
-                    easing: 'easeInElastic(1, 0.5)',
-                    duration: 1000,
+                    innerText: [0, value + '%'],
+                    backgroundColor: [0, '#'+ bar.getAttribute('data-barcolor')],
+                    easing: 'easeInQuad',
+                    duration: 500,
+                    round: 10,
                 });
-               bar.innerText = value + '%';
+          
                bar.style.fontWeight = "600";
                bar.style.backgroundColor =  '#' + bar.getAttribute('data-barcolor');
             });
