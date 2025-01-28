@@ -28,11 +28,10 @@
      <main>
      <div class="container-2 container-1">
       <div class="welcome-text heading feedback-heading">Please Give Your Feedback</div>
-      <form action="/feedback.php" class="my-intro" id="form" >
+      <form action="" class="my-intro" id="form" >
         <input type="text" name="name" id="name" class="input" placeholder="Enter your name">
         <input type="email" name="name" id="email" class="input" placeholder="Enter your email" >
         <textarea name="feedback" id="feedback" cols="30" rows="30" placeholder="Write Your Feedback Here"></textarea>
-        
         <button type="submit" class="nav-btns-2 submit" name="submit" id="submit">Submit Feedback</button>
      </form>
      </div>
@@ -58,6 +57,33 @@
         </div>
     </footer>
     <button style="display: none;" id="scroll-up">&#x2191;</button>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+         emailjs.init("2CKA4I2jR7lutzZSJ");
+      })();
+
+
+      //Send Email 
+
+      document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const serviceID = 'service_x3r85sb';
+    const templateID = 'template_twp24z7';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Thank you for your feedback!');
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert('Oops! Something went wrong.');
+        });
+});
+
+    </script>
+    
     <script src="js/app.js"></script>
 </body>
 </html>
