@@ -5,13 +5,13 @@
 
  //Send Email 
 
- document.getElementById('form').addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function(event) {
 event.preventDefault(); // Prevent the default form submission
 
 const serviceID = 'service_x3r85sb';
 const templateID = 'template_twp24z7';
 
-emailjs.sendForm(serviceID, templateID, this)
+emailjs.send(serviceID, templateID, this)
    .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
        alert('Thank you for your feedback!');
