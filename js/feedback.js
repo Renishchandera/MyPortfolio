@@ -9,7 +9,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
 event.preventDefault(); // Prevent the default form submission
 
 const serviceID = 'service_x3r85sb';
-const templateID = 'template_twp24z7';
+const templateID = 'template_7gz0p67';
 
 
 //Send data Another Way
