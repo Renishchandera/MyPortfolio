@@ -28,12 +28,12 @@
     max-width: 95%;
     height: 13rem;
 }
-#project-7 .img-box{
+#project-7 .img-box, #project-8 .img-box{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#project-7 .img-box img{
+#project-7 .img-box img,#project-8 .img-box img{
     max-width: 95%;
     height: 10rem;
     margin: 0.2rem;
